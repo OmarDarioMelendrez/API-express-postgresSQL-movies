@@ -24,6 +24,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 require('./middlewares/passportConfig')(passport);
 
+app.get("/", (req,res)=> {
+    res.send("Alta paginuqui broda.")
+})
 
 // routes
 app.use('/api', routes)

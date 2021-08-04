@@ -6,7 +6,7 @@ const auth = (req,res,next) => {
     if (user){
         next()
     } else {
-        res.status(403).send({msg: "unathorized"})
+        res.status(403).send({msg: "unauthorized"})
     }
 }
 
